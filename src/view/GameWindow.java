@@ -5,6 +5,7 @@
  */
 package view;
 
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -12,6 +13,9 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 
 /**
  *
@@ -29,13 +33,8 @@ public class GameWindow extends javax.swing.JFrame {
         lblXodlaw.setVisible(false);
         lblXwoof.setVisible(false);
         lblXwenda.setVisible(false);       
-        try {
-            image = ImageIO.read(new File("/images/marvel.png"));
-        } catch (IOException ex) {
-            Logger.getLogger(GameWindow.class.getName()).log(Level.SEVERE, null, ex);
-        }
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -124,9 +123,20 @@ public class GameWindow extends javax.swing.JFrame {
 //-------------------------------------ATENCION---------------------------------
     //Así se hace para que un label ejecute una acción cuando se le haga click
     private void lblFrameWaldoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFrameWaldoMouseClicked
-        lblXwaldo.setVisible(true);
+        lblXwaldo.setVisible(true);        
     }//GEN-LAST:event_lblFrameWaldoMouseClicked
 
+    //Este es el método que usa la vara de los hash
+    /*public void paintCharacters(){
+        panelStage.setLayout(null);        
+        JLabel label = new JLabel(new ImageIcon("src/images/cosmo.png"));
+        JLabel label2 = new JLabel(new ImageIcon("src/images/wanda.png"));
+        panelStage.add(label);
+        panelStage.add(label2);
+        Dimension size = label.getPreferredSize();
+        label.setBounds(100, 100, size.width, size.height);
+    }*/
+        
     /**
      * @param args the command line arguments
      */
