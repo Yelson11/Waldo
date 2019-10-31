@@ -23,7 +23,11 @@ import javax.swing.JLabel;
  */
 public class GameWindow extends javax.swing.JFrame {
 
-    private BufferedImage image;
+    private JLabel waldo;
+    private JLabel wenda;
+    private JLabel woof;
+    private JLabel gandalf;
+    private JLabel odlaw;
 
     public GameWindow(){
         initComponents();
