@@ -25,7 +25,8 @@ public class Controller {
     private ArrayList<Stage> stages= new ArrayList<>();
     
     private Controller(){
-        
+        chargeCharacters("src/datos/characters.txt");
+        chargeStages("src/datos/stage.txt");
     }
     
     public Controller getInstance(){
@@ -105,8 +106,8 @@ public class Controller {
               Character character= (Character) cf.getPrototype(a[0]);
               ArrayList<Coordinate> coordinates= Position.generatePositions(900, 600, Integer.parseInt(a[1]), 40);      
               stage.addCharacter(character, coordinates);
-              stages.add(stage);
            }
+           stages.add(stage);
         }
         catch(Exception e){
            e.printStackTrace();
