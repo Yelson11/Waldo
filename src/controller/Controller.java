@@ -25,8 +25,8 @@ public class Controller {
     private ArrayList<Stage> stages= new ArrayList<>();
     
     private Controller(){
-        chargeCharacters("src/datos/characters.txt");
-        chargeStages("src/datos/stage.txt");
+        chargeCharacters("src/datos/characters.txt");//carga los personajes
+        chargeStages("src/datos/stage.txt"); //carga el escenario 1
     }
     
     public Controller getInstance(){
@@ -36,6 +36,13 @@ public class Controller {
         return controller;
     }
     
+    
+    
+    public ArrayList<Stage> getEscenarios(){
+        return stages;
+    }
+    
+    //añade un prototipo a la lista de prototipos
     private void createPrototype(String name, String image){
         Character c = new Character.CharacterBuilder()
                       .addName(name)
@@ -44,6 +51,7 @@ public class Controller {
               cf.addPrototype(name, c);
     }
     
+    //Carga de un txt los prototipos de los personajes
     private void chargeCharacters(String data){
         File archivo = null;
         FileReader fr = null;
@@ -81,6 +89,7 @@ public class Controller {
         }
     }
     
+    //carga un escenario desde un txt y lo guarda en la lista de escenarios
     private void chargeStages(String data){
         File archivo = null;
         FileReader fr = null;
