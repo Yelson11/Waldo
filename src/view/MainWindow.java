@@ -1,5 +1,7 @@
 package view;
 
+import javafx.stage.Stage;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -52,6 +54,11 @@ public class MainWindow extends javax.swing.JFrame {
         btnPlay.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
         btnPlay.setForeground(new java.awt.Color(255, 255, 255));
         btnPlay.setText("PLAY");
+        btnPlay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPlayActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnPlay, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 350, 140, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/fondo.jpg"))); // NOI18N
@@ -64,6 +71,12 @@ public class MainWindow extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(1);
     }//GEN-LAST:event_btnCloseActionPerformed
+
+    private void btnPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlayActionPerformed
+        this.hide();
+        StageWindow w = new StageWindow();
+        w.show();
+    }//GEN-LAST:event_btnPlayActionPerformed
 
     /**
      * @param args the command line arguments
