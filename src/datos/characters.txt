@@ -1,0 +1,45 @@
+Antman,antman.png
+Bee,bee.png
+Bob Esponja,bob_esponja.png
+Candace,candace.png
+Chester,chester.png
+Cosmo,cosmo.png
+Crocker,crocker.png
+Cucaracha,cucaracha.png
+Daredevil,daredevil.png
+Deadpool,deadpool.png
+Elmo,elmo.png
+Escanor,escanor.png
+Ferb,ferb.png
+Garu,garu.png
+Goku,goku.png
+Gunter,gunter.png
+Ironman,ironman.png
+Isabella,isabella.png
+Jane,jane.png
+Kick Buttowski,kick.png
+Link,link.png
+Mario,mario.png
+Captain Marvel,marvel.png
+Rayo McQueen,mcqueen.png
+Meliodas,meliodas.png
+Patricio,patricio.png
+Patroopa,patroopa.png
+Peach,peach.png
+Perry,perry.png
+Phineas,phineas.png
+Plancton,plancton.png
+Pucca,pucca.png
+Shazam,shazam.png
+Tarzan,tarzan.png
+Timmy,timmy.png
+Toad,toad.png
+Vicky,vicky.png
+Wanda,wanda.png
+Scarlet Witch,witch.png
+Yoshi,yoshi.png
+Grupo,grupo.png
+Scooby Doo,scooby.png
+Krypto,krypto.png
+Dog,dog.png
+Clifford,clifford.png

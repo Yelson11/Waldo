@@ -1,0 +1,14 @@
+Stadium,stadium.png
+Mario,2
+Kick Buttowski,5
+Yoshi,2
+Patroopa,20
+Bee,10
+Captain Marvel,2
+Timmy,5
+Peach,6
+Patricio,2
+Chester,3
+Link,3
+Perry,6
+Toad,10
