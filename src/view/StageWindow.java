@@ -5,6 +5,10 @@
  */
 package view;
 
+import java.awt.Dimension;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
 /**
  *
  * @author Yelson
@@ -17,6 +21,13 @@ public class StageWindow extends javax.swing.JFrame {
     public StageWindow() {
         initComponents();
         this.setLocationRelativeTo(null);
+        JLabel label = new JLabel(new ImageIcon("src/images/stage.png"));
+        panel.setLayout(null);
+        panel.add(label);
+        Dimension size = label.getPreferredSize();
+        label.setBounds(1, 1, size.width, size.height);
+        //Tamaño de las miniaturas
+        //380 x 240
     }
 
     /**
@@ -31,6 +42,7 @@ public class StageWindow extends javax.swing.JFrame {
         btnNext = new javax.swing.JButton();
         btnPreview = new javax.swing.JButton();
         btnPlay = new javax.swing.JButton();
+        panel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -60,8 +72,9 @@ public class StageWindow extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnPlay, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 510, 240, 40));
+        getContentPane().add(panel, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 380, 240));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/stage_selector.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/stage_selector.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
@@ -116,5 +129,6 @@ public class StageWindow extends javax.swing.JFrame {
     private javax.swing.JButton btnPlay;
     private javax.swing.JButton btnPreview;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel panel;
     // End of variables declaration//GEN-END:variables
 }
